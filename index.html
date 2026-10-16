@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Quick Quiz</h2>
+        <p id="question">What is the output of <code>typeof null</code> in JavaScript?</p>
+        <div class="options">
+            <button class="option" onclick="checkAnswer(this, false)">'null'</button>
+            <button class="option" onclick="checkAnswer(this, true)">'object'</button>
+            <button class="option" onclick="checkAnswer(this, false)">'undefined'</button>
+            <button class="option" onclick="checkAnswer(this, false)">'boolean'</button>
+        </div>
+        <p id="result-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
